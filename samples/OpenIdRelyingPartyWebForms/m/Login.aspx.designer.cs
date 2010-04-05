@@ -21,16 +21,7 @@ namespace OpenIdRelyingPartyWebForms.m {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.MobileControls.Form form1;
-        
-        /// <summary>
-        /// openIdTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DotNetOpenAuth.OpenId.RelyingParty.OpenIdMobileTextBox openIdTextBox;
-        
+              
         /// <summary>
         /// loginButton control.
         /// </summary>

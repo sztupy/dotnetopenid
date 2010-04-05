@@ -155,7 +155,6 @@
       <HintPath>..\..\lib\System.Web.Abstractions.dll</HintPath>
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Web.Mobile" />
     <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\System.Web.Mvc.dll</HintPath>
@@ -168,9 +167,6 @@
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="WindowsBase">
-      <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -239,6 +235,7 @@
     <Compile Include="Messaging\Reflection\IMessagePartEncoder.cs" />
     <Compile Include="Messaging\Reflection\IMessagePartNullEncoder.cs" />
     <Compile Include="Messaging\Reflection\MessageDescriptionCollection.cs" />
+    <Compile Include="MonoExt\MonoObservableCollection.cs" />
     <Compile Include="OAuth\ChannelElements\ICombinedOpenIdProviderTokenManager.cs" />
     <Compile Include="OAuth\ChannelElements\IConsumerDescription.cs" />
     <Compile Include="OAuth\ChannelElements\IConsumerTokenManager.cs" />
@@ -468,7 +465,6 @@
     <Compile Include="OpenId\RelyingParty\OpenIdButton.cs" />
     <Compile Include="OpenId\RelyingParty\OpenIdEventArgs.cs" />
     <Compile Include="OpenId\RelyingParty\OpenIdLogin.cs" />
-    <Compile Include="OpenId\RelyingParty\OpenIdMobileTextBox.cs" />
     <Compile Include="OpenId\RelyingParty\OpenIdRelyingPartyControlBase.cs" />
     <Compile Include="OpenId\RelyingParty\OpenIdTextBox.cs" />
     <Compile Include="OpenId\RelyingParty\PopupBehavior.cs" />

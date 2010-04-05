@@ -20,6 +20,7 @@ namespace DotNetOpenAuth.OpenId.RelyingParty {
 	using DotNetOpenAuth.OpenId.ChannelElements;
 	using DotNetOpenAuth.OpenId.Extensions;
 	using DotNetOpenAuth.OpenId.Messages;
+  using MonoExt.System.Collections.ObjectModel;
 
 	/// <summary>
 	/// A delegate that decides whether a given OpenID Provider endpoint may be
@@ -601,7 +602,7 @@ namespace DotNetOpenAuth.OpenId.RelyingParty {
 		/// Called by derived classes when behaviors are added or removed.
 		/// </summary>
 		/// <param name="sender">The collection being modified.</param>
-		/// <param name="e">The <see cref="System.Collections.Specialized.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
+    /// <param name="e">The <see cref="MonoExt.System.Collections.ObjectModel.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
 		private void OnBehaviorsChanged(object sender, NotifyCollectionChangedEventArgs e) {
 			foreach (IRelyingPartyBehavior profile in e.NewItems) {
 				profile.ApplySecuritySettings(this.SecuritySettings);
